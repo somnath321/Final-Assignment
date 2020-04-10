@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-header">
+    <h3>Profile</h3>
+  </div>
+  <div style="padding:10px;">
+    <button *ngIf="emp" class='btn btn-primary' style="background-color: #563d7c;" emp.id]"> Edit Details
+    </button>
+  </div>
+  <div class="card-body">
+    <div *ngIf="emp" class='table-responsive'>
+      <table class='table'>
+        <tbody>
+          <tr>
+            <td><strong>Name : &nbsp;&nbsp;</strong>{{emp.Name}}</td>
+            <td><strong>Date Of Joining : &nbsp;</strong>{{emp.DOJ}}</td>
+          </tr>
+          <tr>
+            <td><strong>Email : &nbsp;&nbsp;</strong>{{emp.Email}}</td>
+            <td><strong>Date Of Birth : &nbsp;&nbsp;</strong>{{emp.DOB}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

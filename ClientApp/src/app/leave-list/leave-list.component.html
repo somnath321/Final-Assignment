@@ -1,0 +1,26 @@
+<h2 class="text-center" style="padding: 15px;">Leave Configuration</h2>
+<div class='card'>
+  <div class='card-header'>
+    <button class='btn btn-primary' style="background-color: #563d7c;" </button>
+  </div>
+  <div class='table-responsive'>
+    <table class='table' *ngIf='emp'>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Number of days</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let emp '>
+          <td>{{emp.name}}</td>
+          <td>{{emp.no_of_days}}</td>
+          <td><button class='btn btn-primary' style="background-color: #563d7c;" >Edit</button></td>
+          <td><button class='btn btn-primary' style="background-color: #563d7c;" (click)="delete(emp.id)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
